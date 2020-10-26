@@ -1,3 +1,6 @@
+// JAVASCRIPT EXERCISES:
+
+
 // 1) Variables y Operadores
 
 // a) Crear dos variables numéricas y utilizar el operador suma para guardar el valor de la
@@ -133,3 +136,21 @@ console.log('Meses en string: ', mesesEnString);
 
 var mesesSlice = meses.slice(4, 11);
 console.log('Meses slice: ', mesesSlice);
+
+
+//=============================================================================================
+
+
+// 4) If Else
+
+// a) Crear un número aleatorio entre 0 y 1 utilizando la función Math.random(), si el valor es
+// mayor o igual que 0,5 mostrar una alerta con el mensaje “Greater than 0,5” y sino un
+// alerta con el mensaje “Lower than 0,5”
+
+var random = Math.random();
+console.log('Random number: ', random);
+if (random >= 0.5) {
+    alert('Greather than 0,5');
+} else {
+    alert('Lower than 0,5');
+}
