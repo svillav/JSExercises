@@ -114,3 +114,9 @@ var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Ag
 meses.shift();
 meses.pop();
 console.log('Meses suprimidos: ', meses);
+
+// e) Invertir el orden del array (utilizar reverse).
+
+var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+meses.reverse();
+console.log('Meses invertidos: ', meses);
