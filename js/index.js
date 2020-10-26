@@ -23,3 +23,16 @@ var str3 = 'Foo';
 var str4 = 'Bar';
 var strLength = str3.length + str4.length;
 console.log('Str Lenght: ', strLength);
+
+
+//=============================================================================================
+
+
+// 2) Strings
+
+// a) Crear una variable de tipo string con al menos 10 caracteres y convertir todo el texto
+//  en mayúscula (utilizar toUpperCase).
+
+var str5 = 'javascript';
+var upper = str5.toUpperCase();
+console.log('Upper: ', upper);
