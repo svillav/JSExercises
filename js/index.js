@@ -52,3 +52,11 @@ console.log('Substring 1: ', substr1);
 var str7 = 'Web Application';
 var substr2 = str7.substring(12);
 console.log('Substring 2: ', substr2);
+
+// d) Crear una variable de tipo string con al menos 10 caracteres y generar un nuevo string
+//  con la primera letra en mayúscula y las demás en minúscula. Guardar el resultado en
+//  una nueva variable (utilizar substring, toUpperCase, toLowerCase y el operador +).
+
+var str8 = 'new Substring';
+var substr3 = str8.substring(0, 1).toUpperCase() + str8.substring(1).toLowerCase();
+console.log('Substring 3: ', substr3);
