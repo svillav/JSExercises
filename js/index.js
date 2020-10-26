@@ -127,3 +127,9 @@ console.log('Meses invertidos: ', meses);
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 var mesesEnString = meses.join('-');
 console.log('Meses en string: ', mesesEnString);
+
+// g) Crear una copia del array de meses que contenga desde Mayo hasta Noviembre
+//  (utilizar slice).
+
+var mesesSlice = meses.slice(4, 11);
+console.log('Meses slice: ', mesesSlice);
