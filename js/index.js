@@ -184,3 +184,17 @@ if (Age < 2) {
 } else if (75 < Age) {
     alert('Anciano');
 }
+
+
+//=============================================================================================
+
+
+// 5) For
+
+// a) Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de
+//  JavaScript para mostrar una alerta utilizando cada una de las palabras.
+
+var fiveWords = ['First', 'Second', 'Third', 'Fourth', 'Fifth'];
+for (var i = 0; i < fiveWords.length; i++) {
+    alert(fiveWords[i]);
+}
