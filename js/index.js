@@ -81,3 +81,22 @@ var substr4 = str10.substring(0, 1).toUpperCase() +
     str10.substring(5, 6).toUpperCase() +
     str10.substring(6).toLowerCase();
 console.log('Last substring: ', substr4);
+
+
+//=============================================================================================
+
+
+// 3) Arrays
+
+// a) Dado el siguiente array: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+//  "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"] mostrar por
+//  consola los meses 5 y 11 (utilizar console.log).
+
+var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+console.log('Mes 5: ', meses[4]);
+console.log('Mes 11: ', meses[10]);
+
+// b) Ordenar el array de meses alfabéticamente y mostrarlo por consola (utilizar sort).
+
+meses.sort();
+console.log('Meses ordenados alfabeticamente: ', meses);
