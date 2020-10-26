@@ -100,3 +100,9 @@ console.log('Mes 11: ', meses[10]);
 
 meses.sort();
 console.log('Meses ordenados alfabeticamente: ', meses);
+
+// c) Agregar un elemento al principio y al final del array (utilizar unshift y push).
+var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+meses.unshift('Antes');
+meses.push('Despues');
+console.log('Meses agregados: ', meses);
