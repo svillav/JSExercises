@@ -60,3 +60,11 @@ console.log('Substring 2: ', substr2);
 var str8 = 'new Substring';
 var substr3 = str8.substring(0, 1).toUpperCase() + str8.substring(1).toLowerCase();
 console.log('Substring 3: ', substr3);
+
+// e) Crear una variable de tipo string con al menos 10 caracteres y algún espacio en blanco.
+//  Encontrar la posición del primer espacio en blanco y guardarla en una variable (utilizar
+//  indexOf).
+
+var str9 = 'Use IndexOf';
+var spaceIndex = str9.indexOf(' ');
+console.log('Space Index: ', spaceIndex);
