@@ -15,3 +15,11 @@ var str1 = 'John ';
 var str2 = 'Doe';
 var concat = str1 + str2;
 console.log('Concat: ', concat);
+
+// c) Crear dos variables de tipo String y sumar el largo de cada variable (cantidad de letras
+//  del string) guardando el resultado de la suma en una 3er variable (utilizar length).
+
+var str3 = 'Foo';
+var str4 = 'Bar';
+var strLength = str3.length + str4.length;
+console.log('Str Lenght: ', strLength);
