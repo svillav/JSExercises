@@ -120,3 +120,10 @@ console.log('Meses suprimidos: ', meses);
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 meses.reverse();
 console.log('Meses invertidos: ', meses);
+
+// f) Unir todos los elementos del array en un único string donde cada mes este separado
+//  por un guión - (utilizar join).
+
+var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+var mesesEnString = meses.join('-');
+console.log('Meses en string: ', mesesEnString);
