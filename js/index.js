@@ -102,7 +102,15 @@ meses.sort();
 console.log('Meses ordenados alfabeticamente: ', meses);
 
 // c) Agregar un elemento al principio y al final del array (utilizar unshift y push).
+
 var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 meses.unshift('Antes');
 meses.push('Despues');
 console.log('Meses agregados: ', meses);
+
+// d) Quitar un elemento del principio y del final del array (utilizar shift y pop).
+
+var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+meses.shift();
+meses.pop();
+console.log('Meses suprimidos: ', meses);
