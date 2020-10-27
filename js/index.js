@@ -229,3 +229,19 @@ for (var i = 0; i < 10; i++) {
     emptyArr.push(i);
 }
 console.log('Array con 10 elementos: ', emptyArr);
+
+
+//=============================================================================================
+
+
+// 6) Funciones
+
+// a) Crear una función suma que reciba dos valores numéricos y retorne el resultado.
+//  Ejecutar la función y guardar el resultado en una variable, mostrando el valor de dicha
+//  variable en la consola del navegador.
+
+var suma = function(arg1, arg2) {
+    return arg1 + arg2;
+}
+var result = suma(8, 1);
+console.log('Resultado: ', result);
