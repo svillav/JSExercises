@@ -260,3 +260,16 @@ var suma2 = function(arg1, arg2) {
 }
 var result2 = suma2('Hola', 1);
 console.log('Resultado 2: ', result2);
+
+// c) Crear una función validate integer que reciba un número como parámetro y devuelva verdadero
+//  si es un número entero.
+
+var validateInteger = function(num) {
+    if (num === Math.floor(num)) {
+        return true;
+    } else {
+        console.log('El numero ' + num + ' no es entero');
+    }
+}
+var validate = validateInteger(4.5);
+console.log(validate);
