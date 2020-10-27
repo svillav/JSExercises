@@ -149,6 +149,7 @@ console.log('Meses slice: ', mesesSlice);
 
 var random = Math.random();
 console.log('Random number: ', random);
+
 if (random >= 0.5) {
     alert('Greather than 0,5');
 } else {
@@ -214,9 +215,11 @@ for (var i = 0; i < fiveWords.length; i++) {
 //  variable sentence. Al final mostrar una única alerta con la cadena completa.
 
 var sentence = '';
+
 for (var i = 0; i < fiveWords.length; i++) {
     sentence += fiveWords[i] + ' ';
 }
+
 alert(sentence);
 
 // d) Crear una array vacío y con un bucle for de 10 repeticiones llenar el array con el
@@ -225,9 +228,11 @@ alert(sentence);
 //  por la consola del navegador el array final (utilizar console.log).
 
 var emptyArr = [];
+
 for (var i = 0; i < 10; i++) {
     emptyArr.push(i);
 }
+
 console.log('Array con 10 elementos: ', emptyArr);
 
 
@@ -243,6 +248,7 @@ console.log('Array con 10 elementos: ', emptyArr);
 var suma1 = function(arg1, arg2) {
     return arg1 + arg2;
 }
+
 var result1 = suma1(8, 1);
 console.log('Resultado 1: ', result1);
 
@@ -258,6 +264,7 @@ var suma2 = function(arg1, arg2) {
         return arg1 + arg2;
     }
 }
+
 var result2 = suma2('Hola', 1);
 console.log('Resultado 2: ', result2);
 
@@ -271,5 +278,46 @@ var validateInteger = function(num) {
         console.log('El numero ' + num + ' no es entero');
     }
 }
+
 var validate = validateInteger(4.5);
 console.log(validate);
+
+// d) A la función suma del ejercicio 6b) agregarle una llamada que valide que los números
+//  sean enteros. En caso que haya decimales mostrar un alerta con el error y retorna el
+//  número convertido a entero (redondeado). 
+
+var suma3 = function(arg1, arg2) {
+    if (typeof arg1 !== "number" || typeof arg2 !== "number") {
+        alert('Uno de los parámetros no es un número.')
+        return NaN;
+    } else if (arg1 !== Math.floor(arg1)) {
+        alert('El primer argumento no es entero.');
+        return Math.round(arg1);
+    } else if (arg2 !== Math.floor(arg2)) {
+        alert('El segundo argumento no es entero.');
+        return Math.round(arg2);
+    } else {
+        return arg1 + arg2;
+    }
+}
+
+var result3 = suma3(5, 1.8);
+console.log('Resultado 3: ', result3);
+
+// e) Convertir la validación del ejercicio 6b) en una función separada y llamarla dentro de la
+//  función suma probando que todo siga funcionando igual.
+
+var sum4Validate = function(arg1, arg2) {
+    if (typeof arg1 !== "number" || typeof arg2 !== "number") {
+        alert('Uno de los parámetros no es un número.')
+        return NaN;
+    }
+}
+
+var suma4 = function(arg1, arg2) {
+    sum4Validate(arg1, arg2);
+    return arg1 + arg2;
+}
+
+var result4 = suma2('Hola de nuevo', 1);
+console.log('Resultado 4: ', result4);
