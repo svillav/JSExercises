@@ -258,7 +258,7 @@ console.log('Resultado 1: ', result1);
 
 var suma2 = function(arg1, arg2) {
     if (typeof arg1 !== "number" || typeof arg2 !== "number") {
-        alert('Uno de los parámetros no es un número.')
+        alert('ERROR: Los parámetros ingresados deben ser números.')
         return NaN;
     } else {
         return arg1 + arg2;
@@ -288,7 +288,7 @@ console.log(validate);
 
 var suma3 = function(arg1, arg2) {
     if (typeof arg1 !== "number" || typeof arg2 !== "number") {
-        alert('Uno de los parámetros no es un número.')
+        alert('ERROR: Los parámetros ingresados deben ser números.')
         return NaN;
     } else if (arg1 !== Math.floor(arg1)) {
         alert('El primer argumento no es entero.');
@@ -309,7 +309,7 @@ console.log('Resultado 3: ', result3);
 
 var sum4Validate = function(arg1, arg2) {
     if (typeof arg1 !== "number" || typeof arg2 !== "number") {
-        alert('Uno de los parámetros no es un número.')
+        alert('ERROR: Los parámetros ingresados deben ser números.')
         return NaN;
     }
 }
