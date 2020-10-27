@@ -240,8 +240,23 @@ console.log('Array con 10 elementos: ', emptyArr);
 //  Ejecutar la función y guardar el resultado en una variable, mostrando el valor de dicha
 //  variable en la consola del navegador.
 
-var suma = function(arg1, arg2) {
+var suma1 = function(arg1, arg2) {
     return arg1 + arg2;
 }
-var result = suma(8, 1);
-console.log('Resultado: ', result);
+var result1 = suma1(8, 1);
+console.log('Resultado 1: ', result1);
+
+// b) A la función suma anterior, agregarle una validación para controlar si alguno de los
+//  parámetros no es un número, mostrar una alerta aclarando que uno de los parámetros
+//  tiene error y retornar el valor NaN como resultado.
+
+var suma2 = function(arg1, arg2) {
+    if (typeof arg1 !== "number" || typeof arg2 !== "number") {
+        alert('Uno de los parámetros no es un número.')
+        return NaN;
+    } else {
+        return arg1 + arg2;
+    }
+}
+var result2 = suma2('Hola', 1);
+console.log('Resultado 2: ', result2);
