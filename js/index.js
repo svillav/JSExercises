@@ -194,7 +194,17 @@ if (Age < 2) {
 // a) Crear un array que contenga 5 palabras y recorrer dicho array utilizando un bucle for de
 //  JavaScript para mostrar una alerta utilizando cada una de las palabras.
 
-var fiveWords = ['First', 'Second', 'Third', 'Fourth', 'Fifth'];
+var fiveWords = ['first', 'second', 'third', 'fourth', 'fifth'];
 for (var i = 0; i < fiveWords.length; i++) {
     alert(fiveWords[i]);
+}
+
+// b) Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una
+//  alerta por cada palabra modificada.
+
+for (var i = 0; i < fiveWords.length; i++) {
+    var firstLetterCapital = fiveWords[i].charAt(0).toUpperCase();
+    var rest = fiveWords[i].substring(1);
+    var wordWithCapitalize = firstLetterCapital + rest;
+    alert(wordWithCapitalize);
 }
